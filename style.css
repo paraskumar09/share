@@ -186,6 +186,11 @@ h4
 
 }
 
+.icon::-webkit-scrollbar
+{
+    display: none;
+}
+
 
 .fb
 {
