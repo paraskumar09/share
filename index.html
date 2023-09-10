@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="topCircle"></div>
+        <div class="bottomCircle"> </div>
+        <div class="container">
+            <img src="p2.png" alt=""  >
+            <h1>Paras kumar</h1>
+            <p>A web developer</p>
+            <div class="btns">
+                <button onclick="openmodal()" class="topbtn">
+                    <i class="fa-solid fa-share"></i> 
+                    Share My Profile
+                </button>
+                <button class="topbtn">Follow Me</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal" id="modal">
+        <div class="head">
+            <h1>Share My Profile</h1>
+            <button class="cross" onclick="closemodal()">
+                <i class="fa-solid fa-x"></i>
+            </button>
+        </div>
+        <hr>
+        <div class="bottom">
+            <h4>Share this via</h1>
+            <div class="links">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//paraskumar09.github.io/share/" class="fb icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/intent/tweet?text=https%3A//paraskumar09.github.io/share/" class="twitter icon">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <div class="insta icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <a href="whatsapp://send?text=https://www.linkedin.com/in/paras-kumar-245934227/" data-action="share/whatsapp/share"
+                target="_blank" class="whatsapp icon">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="https://t.me/share/url?url=https%3A//paraskumar09.github.io/share/&text="  class="tele icon">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay" onclick="closemodal()"></div>
+
+    
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/74eaa90ea5.js" crossorigin="anonymous"></script>
+</body>
+</html>
